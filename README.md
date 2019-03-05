@@ -114,7 +114,7 @@ ________________________________________________________________________________
 
 #### Django Database Connection
 
-The master branch is the production version there for the database setting are configured for Heroku Postgres DB.
+The master branch is the production version there for the database settings are configured for Heroku Postgres DB.
 The connection settings need to be changed to access a local postgres database.
 ____________________________________________________________________________________________________________________________
 + First, create a database for our Django project. Enter __psql__ prompt :
@@ -164,7 +164,7 @@ GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
 ```
 ________________________________________________________________________________________________
 
-The **settings.py** file should be modified to connect to a local DB:
++ Next, modifiy the  **settings.py** to connect to a local DB:
 
 ```
 # DATABASES = {
