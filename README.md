@@ -49,7 +49,17 @@ git clone https://github.com/pedrogritter/lti-project-G11.git
 + Install required dependencies by running:
 
 ```
+Note on Python 3 :you need to install python3-dev using the following command :
+sudo apt-get install python3-dev # debian / Ubuntu
+sudo yum install python3-devel # Red Hat / CentOS
+
+And the python3 mysql library: 
+
+sudo apt-get install python3.6-dev libmysqlclient-dev
+```
+```
 pip install Django==2.1.7
+pip install mysqlclient
 ```
 
 #### Deployment
