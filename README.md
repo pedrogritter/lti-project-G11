@@ -146,15 +146,15 @@ We are setting the default encoding to UTF-8, which Django expects. We are also 
 
 + In __psql__:
 ```
-ALTER ROLE myprojectuser SET client_encoding TO 'utf8';
-ALTER ROLE myprojectuser SET default_transaction_isolation TO 'read committed';
-ALTER ROLE myprojectuser SET timezone TO 'GMT';
+ALTER ROLE project_admin SET client_encoding TO 'utf8';
+ALTER ROLE project_admin SET default_transaction_isolation TO 'read committed';
+ALTER ROLE project_admin SET timezone TO 'GMT';
 ```
 
 + Now, all we need to do is give our database user access rights to the database we created:
 
 ```
-GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
+GRANT ALL PRIVILEGES ON DATABASE project_db TO project_admin;
 ```
 
 + Exit the SQL prompt to get back to the user's shell session:
