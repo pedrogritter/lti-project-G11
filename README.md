@@ -97,7 +97,6 @@ git clone https://github.com/pedrogritter/lti-project-G11.git
 ```
 Note on Python 3 :you need to install python3-dev using the following command :
 sudo apt-get install python3-dev # debian / Ubuntu
-sudo yum install python3-devel # Red Hat / CentOS
 
 And the python3 mysql library: 
 
